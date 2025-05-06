@@ -1,12 +1,12 @@
+"""display most fluent responses"""
+
 import json
 from typing import List, Dict
 import math
-import itertools
 from collections import Counter
 
 import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM
-import sacrebleu
 from tqdm import tqdm
 
 

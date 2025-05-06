@@ -63,7 +63,4 @@ def main(html_path: Path, out_path: str):
 
 
 if __name__ == '__main__':
-    if len(sys.argv) != 3 or not Path(sys.argv[1]).is_file():
-        sys.exit('Usage: python whitman_first_lines_to_json.py whitman.html output.json|-\n'
-                 '       (use "-" for stdout)')
-    main(Path(sys.argv[1]), sys.argv[2])
+    main(Path('whitman.html'), 'whitman.json')
